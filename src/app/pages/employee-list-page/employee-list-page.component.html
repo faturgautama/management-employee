@@ -1,0 +1,5 @@
+<app-dashboard [PageTitle]="'Employee List'" [ActionButton]="ActionButton"
+    (clickActionButton)="handleClickActionButton($event)">
+    <app-table #TableComponent [GridAttributes]="GridAttributes" (onSelectionChange)="handleSelectedRow($event)">
+    </app-table>
+</app-dashboard>

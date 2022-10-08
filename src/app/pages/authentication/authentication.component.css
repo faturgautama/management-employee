@@ -1,0 +1,31 @@
+section#authentication {
+  height: 100vh;
+  max-height: 100vh;
+}
+
+.background_authentication {
+  height: 100%;
+  border-right: 1px solid var(--bs-gray-300);
+  background: url("../../../assets/image/adolfo-felix-PG8NyM_Mcts-unsplash.jpg"),
+    rgba(241, 241, 241, 0.63);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-blend-mode: overlay;
+}
+
+img.img_authentication {
+  height: 10rem;
+  width: auto;
+  text-align: center;
+}
+
+p.brand_name {
+  font-size: 2rem;
+  color: var(--bs-gray-700);
+}
+
+p.brand_name > span.brand_name_span {
+  color: var(--biru-tua);
+  font-weight: 800;
+}

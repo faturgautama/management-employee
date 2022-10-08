@@ -1,0 +1,26 @@
+<app-navbar></app-navbar>
+
+<section id="dashboard_layout">
+    <div class="row mb-2">
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 mb-2">
+            <p class="page_title mb-0 ps-2">
+                {{ PageTitle }}
+            </p>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 text-end">
+            <button *ngFor="let item of ActionButton" [id]="item.id" class="btn btn-outline-primary btn-sm mx-2"
+                type="button" (click)="handleClickActionButton(item.id)">
+                <i class="{{ item.icon }}"></i>&nbsp; {{ item.title }}
+            </button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div class="card card_dashboard shadow-sm">
+                <div class="card-body">
+                    <ng-content></ng-content>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

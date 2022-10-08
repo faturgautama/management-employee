@@ -1,0 +1,61 @@
+<section id="authentication">
+    <div class="row h-100 justify-content-center align-items-center">
+        <!-- Background -->
+        <div class="col-lg-8 col-md-8 col-sm-8 col-sm-8 col-xs-8 background_authentication">
+
+        </div>
+
+        <!-- Form Authentication -->
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4" [formGroup]="FormAuthentication">
+            <!-- Image -->
+            <div class="row mb-2">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
+                    <img src="../../../assets/image/undraw_engineering_team_a7n2.svg" alt="" class="img_authentication">
+                </div>
+            </div>
+
+            <!-- Title -->
+            <div class="row mb-2">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
+                    <p class="brand_name">
+                        <span class="brand_name_span">EMPLOYEE</span> Management
+                    </p>
+                </div>
+            </div>
+
+            <!-- Email -->
+            <div class="row mb-3">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <label for="email" class="form-label">Username</label>
+                    <input type="text" class="form-control" id="username" placeholder="Fill your username here"
+                        formControlName="username">
+                    <div *ngIf="username.touched && username.invalid" class="alert alert-danger p-2 mt-1" role="alert">
+                        Username Tidak Boleh Kosong
+                    </div>
+                </div>
+            </div>
+
+            <!-- Password -->
+            <div class="row mb-4">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <label for="password" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="password" placeholder="Fill your password here"
+                        formControlName="password">
+                    <div *ngIf="password.touched && password.invalid" class="alert alert-danger p-2 mt-1" role="alert">
+                        Password Tidak Boleh Kosong
+                    </div>
+                </div>
+            </div>
+
+            <!-- Button -->
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 d-grid gap-2">
+                    <button type="button" class="btn btn-primary" (click)="handleSignIn()"
+                        [disabled]="FormAuthentication.invalid">
+                        Sign In
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

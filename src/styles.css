@@ -1,0 +1,39 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import "../node_modules/@syncfusion/ej2-base/styles/bootstrap5.css";
+@import "../node_modules/@syncfusion/ej2-buttons/styles/bootstrap5.css";
+@import "../node_modules/@syncfusion/ej2-dropdowns/styles/bootstrap5.css";
+@import "../node_modules/@syncfusion/ej2-inputs/styles/bootstrap5.css";
+@import "../node_modules/@syncfusion/ej2-popups/styles/bootstrap5.css";
+@import "../node_modules/@syncfusion/ej2-lists/styles/bootstrap5.css";
+@import "../node_modules/@syncfusion/ej2-angular-dropdowns/styles/bootstrap5.css";
+@import "../node_modules/@syncfusion/ej2-splitbuttons/styles/bootstrap5.css";
+@import "../node_modules/@syncfusion/ej2-calendars/styles/bootstrap5.css";
+@import "../node_modules/@syncfusion/ej2-angular-calendars/styles/bootstrap5.css";
+
+@import "../node_modules/ag-grid-community/dist/styles/ag-grid.css";
+@import "../node_modules/ag-grid-community/dist/styles/ag-theme-alpine.css";
+
+:root {
+  --biru-muda: #c0e3e7;
+  --merah-muda: #ffdddc;
+  --coklat: #6c430e;
+  --coklat-tua: #45220d;
+}
+
+html,
+body {
+  font-family: "Inter", sans-serif !important;
+  background-color: var(--putih) !important;
+}
+
+.row {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+.cursor-pointer {
+  cursor: pointer !important;
+}

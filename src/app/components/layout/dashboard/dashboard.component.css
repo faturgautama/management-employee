@@ -1,0 +1,16 @@
+section#dashboard_layout {
+  padding-top: 4.5rem;
+  height: 100vh;
+  max-height: 100vh;
+  background-color: var(--bs-gray-100);
+}
+
+.card_dashboard {
+  border-top: 5px solid var(--biru-muda);
+  border-left: 0px;
+  border-right: 0px;
+  border-bottom: 0px;
+  border-radius: 10px;
+  height: calc(100vh - 8rem);
+  overflow-y: auto;
+}
